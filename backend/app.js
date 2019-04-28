@@ -36,7 +36,7 @@ app.use((req, res, next) => {
     next();
 });
 
-mongoose.connect('mongodb+srv://rian:yF0tawNfhh858hfJ@cluster0-6jkog.mongodb.net/test?retryWrites=true')
+mongoose.connect('mongodb+srv://rian:yF0tawNfhh858hfJ@cluster0-6jkog.mongodb.net/test?retryWrites=true', { useNewUrlParser: true })
 .then( () => {
     console.log('Successfully connected to MongoDB Atlas!');
 })
