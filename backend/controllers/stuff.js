@@ -2,6 +2,9 @@ const fs = require('fs');
 const Thing = require('../models/thing');
 
 exports.createThing = (req, res, next) => {
+    // console.log('isi req', req.body);
+    // console.log('isi file: ', req.file)
+    // console.log("server req: ", req.body.thing);
     // to add a file to the request, the front end needed to send the request data as form-data as opposed to JSON — 
     // the request body contains a thing string, which is simply a stringified thing object — 
     // we therefore need to parse it using JSON.parse() to get a usable object

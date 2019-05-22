@@ -9,7 +9,7 @@ const MIME_TYPES = {
 // we create a storage constant — to be passed to multer as configuration — which contains the logic necessary for telling multer 
 // where to save incoming files
 // the destination function tells multer to save files in the images folder
-// the filename  unction tells multer to use the original name, 
+// the filename function tells multer to use the original name, 
 // replacing any spaces with underscores and adding a Date.now() timestamp, as the file name; 
 // it then uses the MIME type map constant to resolve the appropriate file extension
 
